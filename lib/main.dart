@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'chapter.dart';
 import'scoreboard.dart';
+import 'formulas.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -37,6 +38,12 @@ class MyApp extends StatelessWidget {
                 Navigator.push(ctx, ScorePage());
               },
               child: Text("ScoreBoard"),
+            ),
+            new RaisedButton(
+              onPressed: () {
+                Navigator.push(ctx, FormulasPage());
+              },
+              child: Text("Formulas"),
             ),
           ],
         )
