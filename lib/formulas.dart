@@ -34,10 +34,6 @@ class FormulasPage extends MaterialPageRoute<Null> {
   });
 }
 
-//project plan update or work on it
-//profiler flutter and the architecture stuff
-//en pause y cerrada (last to 0 en este ultimo) debugging enabled(how to remove)
-//need to pull formulas from a file following this format filters!
 String firstFormula = r"""
   <p>
     $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
