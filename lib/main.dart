@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'chapter.dart';
+import 'coursesList.dart';
 import'scoreboard.dart';
 import 'formulas.dart';
 
@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             new RaisedButton(
               onPressed: () {
-                Navigator.push(ctx, ChapterPage());
+                Navigator.push(ctx, ScorePage());
               },
-              child: Text("Chapter"),
+              child: Text("Courses"),
             ),
 
             new RaisedButton(
@@ -51,3 +51,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
