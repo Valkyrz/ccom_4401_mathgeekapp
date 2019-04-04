@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'puzzle.dart';
-import 'quiz.dart';
+//import 'quiz.dart';
 import 'scoreboard.dart';
+import 'secondscreen.dart';
 
-class ChapterPage extends MaterialPageRoute<Null> {
+class ChapterPage extends MaterialPageRoute<StatefulWidget> {
   ChapterPage() : super(builder: (BuildContext ctx) {
     return Scaffold(
       appBar: AppBar(
@@ -33,7 +34,8 @@ class ChapterPage extends MaterialPageRoute<Null> {
 
             new RaisedButton(
               onPressed: () {
-                Navigator.push(ctx, QuizPage());
+                //Navigator.push(ctx, MathQuiz());
+                Navigator.push(ctx, MaterialPageRoute(builder: (context)=> MathQuiz()));
               },
               child: Text("Quiz"),
             ),
