@@ -3,10 +3,15 @@ import 'package:flutter/foundation.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 
-class ChapterListPage extends StatefulWidget{
-  ChapterListPage({Key key, this.title}) : super(key: key);
+//class CoursesPage extends StatefulWidget {
+//  CoursesPage() : super(builder: (BuildContext ctx) {
+//    ChapterListPage(title: "Chapters",);
+//  });
+//}
 
-  final String title;
+class ChapterListPage extends StatefulWidget{
+  ChapterListPage({Key key, this.title1}) : super(key: key);
+  final String title1;
 
   @override
   _ChapterListPage createState() => new _ChapterListPage();
@@ -27,7 +32,8 @@ class _ChapterListPage extends State<ChapterListPage>{
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text(widget.title),
+        title: new Text(widget.title1),
+        backgroundColor: Colors.cyan[100],
       ),
       body: Container(
           child: FutureBuilder(

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ccom_4401_mathgeekapp.iml" filepath="$PROJECT_DIR$/.idea/ccom_4401_mathgeekapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/ccom_4401_mathgeekapp.iml" filepath="$PROJECT_DIR$/ccom_4401_mathgeekapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/ccom_4401_mathgeekapp_android.iml" filepath="$PROJECT_DIR$/android/ccom_4401_mathgeekapp_android.iml" />
     </modules>
