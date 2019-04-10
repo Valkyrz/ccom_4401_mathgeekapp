@@ -3,12 +3,6 @@ import 'package:flutter/foundation.dart';
 import 'dart:async' show Future;
 import 'package:flutter/services.dart' show rootBundle;
 
-class CoursesPage extends MaterialPageRoute<Null> {
-  CoursesPage() : super(builder: (BuildContext ctx) {
-    ChapterListPage(title: "Chapters",);
-  });
-}
-
 class ChapterListPage extends StatefulWidget{
   ChapterListPage({Key key, this.title}) : super(key: key);
 
