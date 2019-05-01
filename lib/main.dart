@@ -16,12 +16,13 @@ final ThemeData _themeData = new ThemeData(
   accentColor: Colors.cyan[100],
 );
 
+
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext ctx) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("MathGeek V0.7", style: TextStyle(color: Colors.black)),
+        title: Text("MathGeek V0.8", style: TextStyle(color: Colors.black)),
         //backgroundColor: Theme.of(ctx).accentColor,
         backgroundColor: Colors.cyan[100],
       ),
@@ -56,14 +57,6 @@ class MyApp extends StatelessWidget {
                             Container(
                               width: 100,
                               height: 100,
-                              child: ClipRRect(
-                                borderRadius: new BorderRadius.circular(24.0),
-                                child: Image(
-                                  fit: BoxFit.contain,
-                                  alignment: Alignment.topRight,
-                                  image: AssetImage("assets/Math.jpg"),
-                                ),
-                              ),
                             )
                           ],
                         )),
@@ -75,7 +68,7 @@ class MyApp extends StatelessWidget {
             padding: const EdgeInsets.all(16.0),
             child: FittedBox(
               child: Material(
-                  color: Colors.cyan[100],
+                  color: Colors.grey,
                   elevation: 14.0,
                   borderRadius: BorderRadius.circular(24.0),
                   shadowColor: Color(0x802196F3),
@@ -90,20 +83,12 @@ class MyApp extends StatelessWidget {
                           color: Colors.black,
                           fontSize: 20.0,
                         )), onTap: () {
-                          Navigator.push(ctx,MaterialPageRoute(builder: (context) => ScorePage()));
+                          //Navigator.push(ctx,MaterialPageRoute(builder: (context) => ScorePage()));
                         }),
                       ),
                       Container(
                         width: 100,
                         height: 100,
-                        child: ClipRRect(
-                          borderRadius: new BorderRadius.circular(24.0),
-                          child: Image(
-                            fit: BoxFit.contain,
-                            alignment: Alignment.topRight,
-                            image: AssetImage("assets/Math.jpg"),
-                          ),
-                        ),
                       )
                     ],
                   )),
@@ -136,14 +121,6 @@ class MyApp extends StatelessWidget {
                             Container(
                               width: 100,
                               height: 100,
-                              child: ClipRRect(
-                                borderRadius: new BorderRadius.circular(24.0),
-                                child: Image(
-                                  fit: BoxFit.contain,
-                                  alignment: Alignment.topRight,
-                                  image: AssetImage("assets/Math.jpg"),
-                                ),
-                              ),
                             )
                           ],
                         )),

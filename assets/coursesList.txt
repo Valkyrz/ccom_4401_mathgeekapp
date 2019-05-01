@@ -1,3 +1,6 @@
-PreCalculo I
-PreCalculo II
+PreCalculo
 Calculo I
+Calculo II
+Calculo II
+Physics
+Chemistry

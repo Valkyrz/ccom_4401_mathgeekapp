@@ -1,5 +1,12 @@
-r"""
-  <p>
-    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+ <p>
+  Simple formulas found in PreCalculus:<br>
+
+      $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$<br>
+
+      $$a^2 + b^2 = c^2$$<br>
+
+      $$y = m(x) + b$$<br>
+
+      $$m = {(y2 - y1) \over (x2 - x1)}$$<br>
+
   </p>
-  """;

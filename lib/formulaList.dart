@@ -29,6 +29,9 @@ class _FormulaListPage extends State<FormulaListPage>{
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: new AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
         title: new Text("Library", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.cyan[100],
       ),
@@ -52,16 +55,18 @@ class _FormulaListPage extends State<FormulaListPage>{
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Material(
-                        color: Colors.cyan[100],
+                        color: index == 0 ? Colors.cyan[100] : Colors.grey,
                         elevation: 14.0,
                         shadowColor: Color(0xFF74B9FF),
                         borderRadius: BorderRadius.circular(24.0),
                         child: InkWell(
                           onTap: (){
+                            if(index == 0){
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => FormulasPage()));
+                                    builder: (context) => FormulasPage()));}
+                                    {}
                           },
                           child: Center(
                             child: Padding(

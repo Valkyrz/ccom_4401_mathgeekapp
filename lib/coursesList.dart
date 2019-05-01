@@ -20,6 +20,7 @@ class _ChapterListPage extends State<ChapterListPage> {
     String text = data;
     List<String> items = (text.split("\n"));
 
+
     return items;
   }
 
@@ -27,11 +28,13 @@ class _ChapterListPage extends State<ChapterListPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
         title: new Text(widget.title1, style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.cyan[100],
       ),
       body: Container(
-          //decoration: new BoxDecoration(color: Colors.grey),
           child: FutureBuilder(
             future: _getChapters(),
             builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -46,17 +49,19 @@ class _ChapterListPage extends State<ChapterListPage> {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Material(
-                      color: Colors.cyan[100],
+                      color: index == 0 ? Colors.cyan[100] : Colors.grey,
                       elevation: 14.0,
                       shadowColor: Color(0xFF74B9FF),
                       borderRadius: BorderRadius.circular(24.0),
                       child: InkWell(
                         onTap: (){
+                          if(index == 0){
                           Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => ChapterPage(
-                                      snapshot.data[index])));
+                                      snapshot.data[index])));}
+                                      {}
                         },
                         child: Center(
                           child: Padding(

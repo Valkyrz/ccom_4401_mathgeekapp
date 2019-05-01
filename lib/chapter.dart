@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'puzzle.dart';
 import 'formulas.dart';
+import 'landing_page.dart';
 
 //import 'quiz.dart';
 import 'scoreboard.dart';
@@ -22,6 +23,9 @@ class _ChapterPage extends State<ChapterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          iconTheme: IconThemeData(
+            color: Colors.black,
+          ),
           title: Text(widget.chapter, style: TextStyle(color: Colors.black)),
           backgroundColor: Colors.cyan[100]),
       body: StaggeredGridView.count(
@@ -81,7 +85,7 @@ class _ChapterPage extends State<ChapterPage> {
             borderRadius: BorderRadius.circular(24.0),
             child: InkWell(
               onTap: (){
-                Navigator.push(context, PuzzlePage());
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> LandingPage(widget.chapter)));
               },
               child: Center(
                 child: Padding(
@@ -94,7 +98,7 @@ class _ChapterPage extends State<ChapterPage> {
                         children: <Widget>[
                           Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("Puzzle",
+                            child: Text("True or False",
                               style:TextStyle(
                                 color: Colors.black,
                                 fontSize: 20.0,
@@ -119,13 +123,13 @@ class _ChapterPage extends State<ChapterPage> {
             ),
           ),
           Material(
-            color: Colors.cyan[100],
+            color: Colors.grey,
             elevation: 14.0,
             shadowColor: Color(0xFF74B9FF),
             borderRadius: BorderRadius.circular(24.0),
             child: InkWell(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ScorePage()));
+                //Navigator.push(context, MaterialPageRoute(builder: (context) => ScorePage()));
               },
               child: Center(
                 child: Padding(

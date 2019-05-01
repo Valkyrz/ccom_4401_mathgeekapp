@@ -25,7 +25,10 @@ class _FormulasPage extends State<FormulasPage> {
   Widget build(BuildContext context){
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("PreCalculo Formulas"),
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
+        title: new Text("PreCalculo Formulas",style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.cyan[100],
       ),
       body: Container(
@@ -44,8 +47,6 @@ class _FormulasPage extends State<FormulasPage> {
                   child: TeXView(
                     teXHTML: teX,
                   ),
-                  height: 100,
-                  width: 420,
                 );
               }
             },

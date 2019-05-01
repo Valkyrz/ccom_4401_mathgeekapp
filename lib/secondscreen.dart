@@ -13,7 +13,10 @@ class MathQuizState extends State<MathQuiz>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Quiz"),
+        iconTheme: IconThemeData(
+          color: Colors.black,
+        ),
+        title: Text("Quiz", style: TextStyle(color: Colors.black)),
         backgroundColor: Colors.cyan[100],
       ),
 
