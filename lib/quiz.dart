@@ -53,12 +53,12 @@ class QuizState extends State<Quiz> {
                         "Question ${questionNumber + 1} of ${quiz.questions
                             .length}",
                         style: TextStyle(
-                            fontSize: 22.0
+                            fontSize: 22.0, color: Colors.black
                         ),),
 
                       Text("Score: $finalScore",
                         style: TextStyle(
-                            fontSize: 22.0
+                            fontSize: 22.0, color: Colors.black
                         ),)
                     ],
                   ),
@@ -68,7 +68,7 @@ class QuizState extends State<Quiz> {
 
                 Text(quiz.questions[questionNumber],
                   style: TextStyle(
-                    fontSize: 20.0,
+                    fontSize: 20.0, color: Colors.black
                   ),),
 
                 Padding(padding: EdgeInsets.all(10.0)),
@@ -94,7 +94,7 @@ class QuizState extends State<Quiz> {
                       child: Text(quiz.choices[questionNumber][0],
                         style: TextStyle(
                             fontSize: 20.0,
-                            color: Colors.white
+                            color: Colors.black
                         ),),
                     ),
 
@@ -115,7 +115,7 @@ class QuizState extends State<Quiz> {
                       child: Text(quiz.choices[questionNumber][1],
                         style: TextStyle(
                             fontSize: 20.0,
-                            color: Colors.white
+                            color: Colors.black
                         ),),
                     ),
 
@@ -144,7 +144,7 @@ class QuizState extends State<Quiz> {
                       child: Text(quiz.choices[questionNumber][2],
                         style: TextStyle(
                             fontSize: 20.0,
-                            color: Colors.white
+                            color: Colors.black
                         ),),
                     ),
 
@@ -165,7 +165,7 @@ class QuizState extends State<Quiz> {
                       child: Text(quiz.choices[questionNumber][3],
                         style: TextStyle(
                             fontSize: 20.0,
-                            color: Colors.white
+                            color: Colors.black
                         ),),
                     ),
 
@@ -184,7 +184,7 @@ class QuizState extends State<Quiz> {
                         child: Text("Quit",
                           style: TextStyle(
                               fontSize: 18.0,
-                              color: Colors.white
+                              color: Colors.black
                           ),)
                     )
                 ),
@@ -234,7 +234,7 @@ class Summary extends StatelessWidget {
 
               new Text("Final Score: $score",
                 style: new TextStyle(
-                    fontSize: 35.0
+                    fontSize: 35.0, color: Colors.black
                 ),),
 
               new Padding(padding: EdgeInsets.all(30.0)),
@@ -249,7 +249,7 @@ class Summary extends StatelessWidget {
                 child: new Text("Reset Quiz",
                   style: new TextStyle(
                       fontSize: 20.0,
-                      color: Colors.white
+                      color: Colors.black
                   ),),)
             ],
           ),

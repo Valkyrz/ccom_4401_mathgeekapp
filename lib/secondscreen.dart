@@ -35,7 +35,7 @@ class MathQuizState extends State<MathQuiz>{
                 child: new Text(" Start Quiz",
                   style: new TextStyle(
                       fontSize: 18.0,
-                      color: Colors.white
+                      color: Colors.black
                   ),)
             )
           ],
